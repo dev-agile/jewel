@@ -1,0 +1,119 @@
+.pagination_wrapper {
+  padding: 24px 80px 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 20px 29.17px;
+  display: flex;
+  align-items: center;
+}
+
+.right,
+.left {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8391a2;
+  transition: all 0.3s ease-in-out;
+}
+
+.text:hover {
+  color: #1b4aa2;
+}
+
+.right .icon {
+  transform: rotate(180deg);
+}
+
+.unavailable {
+  cursor: not-allowed;
+}
+
+.unavailable .text:hover {
+  color: #8391a2;
+}
+
+.pages {
+  display: flex;
+  gap: 5px;
+}
+
+.page {
+  height: 40px;
+  min-width: 35px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  color: #8391a2;
+}
+
+.page .active {
+  background: #f4f8ff;
+  border-radius: 8px;
+  color: #1b4aa2;
+}
+
+.page .unavailable {
+  cursor: not-allowed;
+}
+
+.page:hover {
+  background: #1b4aa2;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.page:hover .unavailable {
+  background: transparent;
+  color: #8391a2;
+  width: 35px;
+}
+
+.pagination_Btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.previousButton {
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+
+  border: none;
+  background: none;
+}
+
+.clicked {
+  border-radius: 8px;
+  background: #393426;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .previousButton {
+    padding: 10px;
+    width: 150px;
+  }
+  .pagination_wrapper {
+    padding: 10px;
+    flex-direction: column;
+  }
+}

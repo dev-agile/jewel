@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../../public/fonts/Avenir\ Black.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Avenir" !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
